@@ -49,6 +49,11 @@
   {%- include '_third-party/math/index.njk' -%}
   {%- include '_third-party/quicklink.njk' -%}
 
+  {%- include '_custom/custom.njk' -%}
+
   {{- next_inject('bodyEnd') }}
+
+  {{ live2d() }}
+
 </body>
 </html>
