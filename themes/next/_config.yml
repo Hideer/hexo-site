@@ -24,7 +24,7 @@ custom_file_path:
   #sidebar: source/_data/sidebar.njk
   #postMeta: source/_data/post-meta.njk
   #postBodyEnd: source/_data/post-body-end.njk
-  #footer: source/_data/footer.njk
+  # footer: source/_data/footer.njk
   #bodyEnd: source/_data/body-end.njk
   #variable: source/_data/variables.styl
   #mixin: source/_data/mixins.styl
@@ -36,9 +36,9 @@ custom_file_path:
 # ---------------------------------------------------------------
 
 # Schemes
-# scheme: Muse
+scheme: Muse
 # scheme: Mist
-scheme: Pisces
+# scheme: Pisces
 # scheme: Gemini
 
 # Dark Mode
@@ -425,7 +425,7 @@ github_banner:
 # ---------------------------------------------------------------
 
 font:
-  enable: false
+  enable: true
 
   # Uri of fonts host, e.g. https://fonts.googleapis.com (Default).
   host:
@@ -438,7 +438,7 @@ font:
   # Global font settings used for all elements inside <body>.
   global:
     external: true
-    family: Lato
+    family: Monda
     size:
 
   # Font settings for site title (.site-title).
@@ -450,7 +450,7 @@ font:
   # Font settings for headlines (<h1> to <h6>).
   headings:
     external: true
-    family:
+    family: Roboto Slab
     size:
 
   # Font settings for posts (.post-body).
@@ -861,7 +861,7 @@ motion:
 # Progress bar in the top during page loading.
 # For more information: https://github.com/CodeByZach/pace
 pace:
-  enable: false
+  enable: true
   # All available colors:
   # black | blue | green | orange | pink | purple | red | silver | white | yellow
   color: blue
@@ -878,6 +878,16 @@ canvas_ribbon:
   alpha: 0.6 # The transparency of the ribbon
   zIndex: -1 # The display level of the ribbon
 
+# Canvas nest
+# For more information https://github.com/theme-next/theme-next-canvas-nest
+canvas_nest:
+  enable: true
+  onmobile: true # 是否在移动端显示
+  color: '0,0,0' # 动态背景中线条的 RGB 颜色
+  opacity: 0.5 # 动态背景中线条透明度
+  zIndex: -1 # 动态背景的 z-index 属性值
+  count: 99 # 动态背景中线条数量
+  srcUrl: 'https://cdn.jsdelivr.net/npm/canvas-nest.js@1/dist/canvas-nest.js'
 
 # ---------------------------------------------------------------
 # CDN Settings
